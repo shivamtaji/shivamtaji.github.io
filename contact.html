@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shivam Taji</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+	a.header {
+		font-size:20px;
+		border:3px;
+		height:50px;
+	}
+	#me {
+		float:left; 
+		padding:10px;
+		line-height:30px;
+		height:500px;
+		width:300px;
+	}
+	.social_icon {
+		width:25px;
+		height:25px;
+	}
+	a:link {
+		color:#506166; 
+		text-decoration:none;
+	}
+	a:visited {
+		color:#506166; 
+		text-decoration:none;
+	}
+	a:hover {
+		color:#506166; 
+		text-decoration:underline;
+	}
+	body {
+		border-left: 135px solid white;
+		border-right: 135px solid white;
+		border-top: 50px solid white;
+	}
+	#about_me {
+		float:left;
+		padding:20px;
+		width:1200px;
+	}
+	p {
+		font-size:125%;	
+		color: #506166;
+	}
+	#contact_me {
+		float:left;
+		width:500px;
+		padding:20px;
+		border:1px solid #eef;
+		margin: 20px;
+	}
+	#contact_box {
+		float:left;
+		width:300px;
+		margin:50px;
+		border:1px solid #eef;
+		padding:20px;
+	}
+	#address {
+		width:55px;
+		height:25px;
+	}
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="btn-group btn-group-justified">
+        	<a href="./index.html" class="btn btn-primary header" style="color:white;">About Me</a>
+    		<a href="./academics.html" class="btn btn-primary header" style="color:white;">Academics</a>
+    		<a href="./cv.html" class="btn btn-primary header" style="color:white;">CV</a>
+		<a href="./contact.html" class="btn btn-info header" style="color:white;">Contact Me</a>
+  	</div>
+
+	<div id="me">	
+		<img src="me.jpg" alt="Shivam Taji" class="img-rounded" style="width:250px;height:250px;">
+		<h3>Shivam Taji
+		<br><small>2<sup>nd</sup> year B.Tech<br>Computer Science and Engineering
+		<br>Indian Institute of Technology, Kanpur</small></h3>
+		<center>
+		<a href="https://www.quora.com/profile/Shivam-Taji" title="Quora" target="_blank"><img src="quora.png" alt="Quora" class="social_icon"></a>&nbsp;&nbsp;
+		<a href="https://www.facebook.com/shivam.taji.3" title="facebook" target="_blank"><img src="fb.png" alt="Facebook" class="social_icon"></a>&nbsp;&nbsp;
+		<a href="https://twitter.com/shivam5555555" title="twitter" target="_blank"><img src="twitter.png" alt="twitter" class="social_icon"></a>&nbsp;&nbsp;
+		<a href="https://plus.google.com/u/0/+ShivamTaji/about" title="Google+" target="_blank"><img src="google.png" alt="Google+" class="social_icon"></a>
+		</center>
+	</div>
+
+	<div>
+		<table class="table" id="contact_me">
+		<caption><h3 style="color=#eef;">Contact Details</h3></caption>
+		<tbody>
+			<tr>
+			<td><i class="glyphicon glyphicon-map-marker" class="cont"></i>&nbsp;Address:</td>
+			<td><span>G 373/2, IIT Kanpur<br>Kanpur, Uttar Pradesh, India, 208016.</span></td>
+			</tr>
+			<tr>
+			<td><i class="glyphicon glyphicon-earphone" class="cont"></i>&nbsp;Phone No.:</td>
+			<td><span>8960621304</span></td>
+			</tr>
+			<tr>
+			<td><i class="glyphicon glyphicon-pencil" class="cont"></i>&nbsp;Email:</td>
+			<td><span>shivam.taji@gmail.com</span></td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+	<div id="contact_box">		
+		<center><h3 style="color=#eef;">Contact Me</h3></center>		
+		<form role="form">
+   		 <div class="form-group">
+   		   <input type="text" class="form-control" placeholder="Your Name*">
+   		 </div>
+   		 
+		 <div class="form-group">
+   		   <input type="text" class="form-control" placeholder="Your Email*">
+   		 </div>
+		
+		 <div class="form-group">
+   		   <input type="text" class="form-control" rows="5" placeholder="Your Message*">
+   		 </div>
+		 <center><button type="button" class="btn btn-primary active" title="Not Functional" onclick="ChangeIt()">Submit</button>
+		 <p id="change"></p></center>
+ 		 </form>
+	</div>
+
+</div>
+<script>
+	function ChangeIt() {
+		document.getElementById("change").innerHTML = "Sorry..To be active soon!!!";
+	}
+</script>
+
+
+</body>
+</html>
